@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#A3B7C9;
+    --secondary-color:#E3A74C;
+    --gradient-btn: linear-gradient(to right, hsl(187 ,85% , 43%) , hsl(199 , 100% , 33%));
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #666;
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --gray-color: rgb(190,190,190);
+    --input-color: rgb(239 , 239 , 239);
+    --body-color:rgb(240 , 240 ,246);
+    --cardBG: rgb(225, 225, 235);
+    --darkred-color: #E1622;
+    --border-color: #D9D9D9;
+    --third-color: #5DA773;
+    --fourth-color: #264774;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.section{
+    padding: 1rem 0 2rem ;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+.btn{
+    padding: 0.6rem 1.5rem;
+    background-color: var(--gradient-btn);
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(--white-color);
+}
+.btn a{
+    font-weight:500;
+}
+.btn a:hover{
+    color: var(--white-color);
+
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+video.video-background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+input{
+    font-size: 100%;
+    background-color: var(--white-color);
+    box-shadow: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input:focus{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(var(--primary-color), 0.5);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.App {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.app-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+}

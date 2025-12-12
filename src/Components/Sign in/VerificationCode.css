@@ -1,0 +1,146 @@
+.verification-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.verification-content {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.verification-illustration {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  mix-blend-mode: multiply;
+  background: transparent;
+}
+
+.verification-content {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.verification-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.back-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.instruction-text {
+  margin-bottom: 2rem;
+  color: #fff;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.verification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.otp-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.verify-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  color: #999;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .verification-title {
+    font-size: 1.5rem;
+  }
+  
+  .otp-input {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+

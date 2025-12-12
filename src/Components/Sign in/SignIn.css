@@ -1,0 +1,122 @@
+.signin-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.signin-content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.signin-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.role-card {
+  position: relative;
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.role-card:active {
+  transform: scale(0.98);
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.role-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.role-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.role-title,
+.role-description {
+  position: relative;
+  z-index: 2;
+}
+
+.role-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.role-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.support-link {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.support-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .role-options {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .role-card {
+    flex: 1;
+  }
+
+  .signin-title {
+    font-size: 3rem;
+  }
+}
+
