@@ -3,6 +3,7 @@ import './WelcomeBack.css';
 import ForgotPassword from './ForgotPassword';
 import SuccessDialog from './SuccessDialog';
 import welcomeBg from '../video-img/sign-in,login-out/log_image.png';
+import videoBg from '../video-img/istockphoto-481273422-640_adpp_is.mp4';
 
 const WelcomeBack = ({ role, onScreenChange, onSignInSuccess }) => {
   const [showForgotPassword, setShowForgotPassword] = useState(false);
@@ -37,6 +38,10 @@ const WelcomeBack = ({ role, onScreenChange, onSignInSuccess }) => {
   return (
     <>
       <div className="welcome-back-container">
+        <video className="welcome-video-background" autoPlay loop muted playsInline>
+          <source src={videoBg} type="video/mp4" />
+        </video>
+        <div className="welcome-video-overlay"></div>
         <div className="welcome-back-content">
           <h1 className="welcome-title">WELCOME BACK</h1>
           <div className="welcome-illustration">

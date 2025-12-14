@@ -1,12 +1,49 @@
 .welcome-back-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.welcome-video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.welcome-video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .welcome-back-content {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 400px;
   text-align: center;
@@ -29,12 +66,6 @@
   border-radius: 12px;
   mix-blend-mode: multiply;
   background: transparent;
-}
-
-.welcome-back-content {
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
 }
 
 .welcome-title {

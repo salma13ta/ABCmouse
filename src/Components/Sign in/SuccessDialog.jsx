@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './SuccessDialog.css';
 import successImage from '../video-img/sign-in,login-out/Jumping girl (2).gif';
 import { FaArrowRight } from 'react-icons/fa';
+import videoBg from '../video-img/istockphoto-481273422-640_adpp_is.mp4';
 
 const SuccessDialog = ({ onClose, userName }) => {
   const [showWelcome, setShowWelcome] = useState(false);
@@ -20,9 +21,14 @@ const SuccessDialog = ({ onClose, userName }) => {
 
   if (showWelcome) {
     return (
-      <div className="dialog-overlay">
-        <div className="welcome-screen" onClick={(e) => e.stopPropagation()}>
+      <div className="welcome-page">
+        <video className="welcome-video-background" autoPlay loop muted playsInline>
+          <source src={videoBg} type="video/mp4" />
+        </video>
+        <div className="welcome-video-overlay"></div>
+        <div className="welcome-content">
           <h2 className="welcome-message">Welcome, {userName || 'User'}!</h2>
+          <p> Explore games, stories, and learning adventures! </p>
           <div className="arrow-container" onMouseEnter={handleArrowHover}>
             <FaArrowRight className="home-arrow" />
           </div>
